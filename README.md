@@ -1,7 +1,5 @@
-# Lyrics for Miley Cyrus *The Climb*
+# YOUR SONG
 
-> It's all about The Climb
+> Lyric from your song
 
 ## Citations
-* [Genius](https://genius.com/2811448?)
-* [Google Fonts](https://fonts.google.com)
