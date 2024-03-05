@@ -7,15 +7,20 @@
         font-family: serif;
         /* increase font size */
         font-size: 1.25em;
-}
+        background: none;
+    }
 
     /* printer anchor links */
     a[href]::after {
-        content: " " attr(href); 
+        content: ": " attr(href); 
+    }
+
+    audio {
+        display: none;
     }
 
     /* turn paragraphs into colums */
-    .face p {
+    p {
         columns: 2;
     }
 
@@ -23,5 +28,4 @@
         /* reset page margins */
         margin: .25in;
     }
-
 }
