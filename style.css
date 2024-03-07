@@ -1,13 +1,58 @@
+@import url("https://cdn.plyr.io/3.7.8/plyr.css");
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --main-font: "Open Sans", Arial, Helvetica, sans-serif;
+    --ewu-red: #B7142E;
+    --ewu-red-transparent: #B7142EAA;
+    --plyr-color-main: #aaa;
+    --plyr-audio-controls-background: #ccc;
+    --plyr-audio-control-color: #555;
+    --plyr-audio-progress-buffered-background: var(--ewu-red);
+    --plyr-font-family: var(--main-font);
+}
+
 body {
-    background: #B7142E;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--main-font);
+    background-image: url(res/blackbg.jpg);
+    background-repeat: repeat;
+}
+
+main {
+    background: var(--ewu-red-transparent);
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+main img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+main article {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+main article figure {
+    background: white;
+    gap: 1em;
 }
 
 a {
-    color: lightgray;
+    color: gray;
     font-weight: bolder;
-    /* text-decoration: none; */
+}
+
+article a {
+    color: #555;
 }
 
 p {
@@ -16,4 +61,17 @@ p {
 
 figure {
     margin-left: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --plyr-font-size-time: 1em;
+        --plyr-control-icon-size: 0.75em;
+    }
+    main h1 {
+        font-size: 1.5em;
+    }
+    main article {
+        flex-direction: column;
+    }
 }

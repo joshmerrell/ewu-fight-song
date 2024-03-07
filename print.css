@@ -15,7 +15,7 @@
         content: ": " attr(href); 
     }
 
-    audio {
+    audio, .plyr {
         display: none;
     }
 
